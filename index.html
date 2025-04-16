@@ -1,39 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Montana Jacob Hoover</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- 🔍 SEO & Social Media Metadata -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Montana Hoover</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <meta name="description" content="Montana Hoover – Ph.D. candidate in Computer Science at UMD. Researching 3D Vision, LiDAR, Generative AI.">
-  <meta name="keywords" content="Montana Hoover, Computer Science, PhD, LiDAR, 3D Vision, AI, Generative Models, CROSSLOC3D, ICCV">
   <meta property="og:title" content="Montana Hoover – Ph.D. Student at UMD">
   <meta property="og:description" content="Researcher in 3D Vision, LiDAR, Generative AI. Contributor to CROSSLOC3D (ICCV 2023).">
   <meta property="og:image" content="https://mjhoover.github.io/profile.jpg">
   <meta property="og:url" content="https://mjhoover.github.io">
   <meta name="twitter:card" content="summary_large_image">
-
-  <!-- 📸 Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Segoe UI', Tahoma, sans-serif;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 2rem;
+      display: flex;
+      min-height: 100vh;
       background-color: #f5f7fa;
       color: #222;
     }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-      color: #1a1a1a;
+    aside {
+      width: 260px;
+      background: #004080;
+      color: #fff;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    aside img {
+      width: 120px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+    aside h1 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    aside a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0.5rem 0;
+    }
+    main {
+      flex-grow: 1;
+      padding: 2rem;
+      overflow-y: auto;
     }
     h2 {
-      margin-top: 2rem;
       color: #004080;
+      margin-top: 2rem;
     }
     a {
       color: #0056b3;
@@ -45,140 +66,125 @@
     .section {
       margin-bottom: 2rem;
     }
-    img {
-      width: 150px;
-      border-radius: 50%;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-    }
     ul {
       padding-left: 1.2em;
+    }
+    .dark-mode {
+      background-color: #121212;
+      color: #eee;
+    }
+    .dark-mode h2 {
+      color: #80b3ff;
+    }
+    .dark-mode aside {
+      background-color: #1a1a1a;
+    }
+    .toggle {
+      margin-top: 1rem;
+      background: #fff;
+      color: #004080;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border-radius: 5px;
     }
   </style>
 </head>
 <body>
+  <aside>
+    <img src="profile.jpg" alt="Montana Hoover">
+    <h1>Montana Hoover</h1>
+    <a href="#about">About</a>
+    <a href="#news">News</a>
+    <a href="#interests">Research Interests</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#publications">Publications</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    <a href="Montana_Hoover_CV_2025.pdf" target="_blank">CV</a>
+    <button class="toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  </aside>
 
-  <h1>Montana Hoover</h1>
-  <img src="profile.jpg" alt="Montana Hoover profile photo">
+  <main>
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>I am a Ph.D. candidate at the University of Maryland researching 3D vision, point cloud understanding, and generative AI. I contribute to state-of-the-art place recognition systems and visualization tools, with prior experience at NASA Goddard and ARLIS.</p>
+    </section>
 
-  <p><strong>Ph.D. Candidate in Computer Science</strong><br>
-     University of Maryland, College Park<br>
-     Location: Annapolis, MD 21409<br>
-     Email: <a href="mailto:mjhoover@umd.edu">mjhoover@umd.edu</a><br>
-     Phone: (443) 852-8655<br>
-     GitHub: <a href="https://github.com/mjhoover1" target="_blank">github.com/mjhoover1</a><br>
-     LinkedIn: <a href="https://linkedin.com/in/montana-hoover-9809b8118" target="_blank">linkedin.com/in/montana-hoover</a>
-  </p>
+    <section id="news" class="section">
+      <h2>News</h2>
+      <ul>
+        <li><strong>April 2025</strong> – Preparing for NeurIPS 2025 submission</li>
+        <li><strong>October 2023</strong> – Presented CROSSLOC3D at ICCV 2023</li>
+      </ul>
+    </section>
 
-  <p><a href="Montana_Hoover_CV_2025.pdf" target="_blank">📄 Download my full CV (PDF)</a></p>
+    <section id="interests" class="section">
+      <h2>Research Interests</h2>
+      <ul>
+        <li>3D Computer Vision</li>
+        <li>LiDAR and Point Clouds</li>
+        <li>Generative Models (Diffusion, Autoencoders)</li>
+        <li>Robotics</li>
+        <li>Deep Learning</li>
+      </ul>
+    </section>
 
-  <div class="section">
-    <h2>About Me</h2>
-    <p>
-      I am a Ph.D. candidate at the University of Maryland researching 3D vision, point cloud understanding, and generative AI. 
-      I contribute to state-of-the-art place recognition systems and visualization tools, with prior experience interning at NASA Goddard and conducting applied AI research at ARLIS.
-    </p>
-  </div>
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Ph.D., Computer Science</strong> — UMD (2022–2026, GPA: 3.9)</li>
+        <li><strong>M.S., Computer Science</strong> — UMD (2021–2022, GPA: 3.9)</li>
+        <li><strong>B.S., CS & Math</strong> — UMD (2018–2021, GPA: 3.86)</li>
+        <li><strong>A.S., Computer Science</strong> — AACC (2015–2018, GPA: 3.9)</li>
+      </ul>
+    </section>
 
-  <div class="section">
-    <h2>News</h2>
-    <ul>
-      <li><strong>April 2025</strong> – Preparing for NeurIPS 2025 submission</li>
-      <li><strong>October 2023</strong> – Published CROSSLOC3D at ICCV 2023 in Paris</li>
-    </ul>
-  </div>
+    <section id="experience" class="section">
+      <h2>Research Experience</h2>
+      <ul>
+        <li><strong>ARLIS</strong> — AI Researcher (2022–Present)</li>
+        <li><strong>UMD</strong> — Graduate Researcher, CROSSLOC3D contributor</li>
+        <li><strong>NASA Goddard</strong> — Intern, Sensor calibration with DAQs and Pi</li>
+      </ul>
+    </section>
 
-  <div class="section">
-    <h2>Research Interests</h2>
-    <ul>
-      <li>3D Computer Vision</li>
-      <li>LiDAR and Point Clouds</li>
-      <li>Generative Models (Diffusion, Autoencoders)</li>
-      <li>Robotics</li>
-      <li>Deep Learning</li>
-    </ul>
-  </div>
+    <section id="publications" class="section">
+      <h2>Publications</h2>
+      <ul>
+        <li><strong>CROSSLOC3D</strong>, ICCV 2023 [<a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Guan_CrossLoc3D_Aerial-Ground_Cross-Source_3D_Place_Recognition_ICCV_2023_paper.pdf" target="_blank">Paper</a>] [<a href="https://github.com/rayguan97/crossloc3d" target="_blank">Code</a>]</li>
+      </ul>
+    </section>
 
-  <div class="section">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>Ph.D., Computer Science</strong> — University of Maryland, College Park (2022–2026, GPA: 3.9)</li>
-      <li><strong>M.S., Computer Science</strong> — University of Maryland, College Park (2021–2022, GPA: 3.9)</li>
-      <li><strong>B.S., Computer Science & Mathematics</strong> — University of Maryland, College Park (2018–2021, GPA: 3.86)</li>
-      <li><strong>A.S., Computer Science</strong> — Anne Arundel Community College (2015–2018, GPA: 3.9)</li>
-    </ul>
-  </div>
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <ul>
+        <li>CROSSLOC3D: Diffusion-based 3D place recognition</li>
+        <li>Adversarial Attacks on MAML</li>
+        <li>JAX-based Traffic Simulation</li>
+        <li>Secure ATM System with OpenSSL</li>
+      </ul>
+    </section>
 
-  <div class="section">
-    <h2>Research Experience</h2>
-    <ul>
-      <li><strong>AI Researcher</strong>, ARLIS, UMD (2022–Present)<br>
-        - Building 3D spatial tools for digital twin applications in defense and intelligence<br>
-        - Previously applied reinforcement learning to supply chain simulations</li>
-      <li><strong>Graduate Researcher</strong>, UMD (2021–Present)<br>
-        - Contributor to CROSSLOC3D (ICCV 2023)<br>
-        - Developed <a href="https://donar.umiacs.umd.edu/quadtree/" target="_blank">spatial index visualizations</a> & developing Sand Browser<br>
-        - Ongoing work in generative modeling with autoencoders and diffusion models</li>
-    </ul>
-  </div>
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <p>Python, C++, Java, R, SQL, PyTorch, TensorFlow, JAX, Flask, Docker, Linux</p>
+    </section>
 
-  <div class="section">
-    <h2>Publications</h2>
-    <ul>
-      <li><strong>CROSSLOC3D</strong>: Aerial-Ground Cross-Source 3D Place Recognition<br>
-        ICCV 2023<br>
-        <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Guan_CrossLoc3D_Aerial-Ground_Cross-Source_3D_Place_Recognition_ICCV_2023_paper.pdf" target="_blank">[Paper]</a>
-        <a href="https://github.com/rayguan97/crossloc3d" target="_blank">[Code]</a>
-      </li>
-    </ul>
-  </div>
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:mjhoover@umd.edu">mjhoover@umd.edu</a><br>
+         GitHub: <a href="https://github.com/mjhoover1" target="_blank">github.com/mjhoover1</a><br>
+         LinkedIn: <a href="https://linkedin.com/in/montana-hoover-9809b8118" target="_blank">linkedin.com/in/montana-hoover</a></p>
+    </section>
+  </main>
 
-  <div class="section">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>CROSSLOC3D</strong>: Aerial-ground 3D place recognition with diffusion-based refinement</li>
-      <li><strong>Adversarial Attacks on MAML</strong>: Patch and watermark attacks in few-shot settings</li>
-      <li><strong>Differentiable Traffic Simulation</strong>: JAX-accelerated agent-based simulation</li>
-      <li><strong>Secure ATM System in C</strong>: MITM-resistant model using OpenSSL</li>
-      <li><strong>COVID Market Analysis</strong>: R-based regression and time series analysis</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Skills</h2>
-    <p>
-      <strong>Languages:</strong> Python, C++, Java, SQL, R, Swift, HTML/CSS, MATLAB<br>
-      <strong>Libraries:</strong> PyTorch, TensorFlow, Keras, NumPy, Spark, OpenSSL<br>
-      <strong>Tools:</strong> Git, Docker, Jupyter, PostgreSQL, Linux/Unix, Django, Flask
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>Professional Experience</h2>
-    <ul>
-      <li><strong>NASA Goddard Space Flight Center</strong> — Mass Spectrometer Calibration Intern (2021)<br>
-        - Developed C++ code for data acquisition and sensor calibration<br>
-        - Integrated DAQ systems with Raspberry Pi and ADCs</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Honors & Affiliations</h2>
-    <ul>
-      <li>Mortar Board Senior Honor Society</li>
-      <li>Phi Theta Kappa Honor Society</li>
-      <li>Dean’s List (All semesters since 2018)</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Contact</h2>
-    <p>
-      Email: <a href="mailto:mjhoover@umd.edu">mjhoover@umd.edu</a><br>
-      GitHub: <a href="https://github.com/mjhoover1" target="_blank">github.com/mjhoover1</a><br>
-      LinkedIn: <a href="https://linkedin.com/in/montana-hoover-9809b8118" target="_blank">linkedin.com/in/montana-hoover</a>
-    </p>
-  </div>
-
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
 </body>
 </html>
